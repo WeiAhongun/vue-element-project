@@ -11,6 +11,10 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!--
+        把App.vue的template里面的内容放到<div id="app"></div>中
+        document.querySelect("#app").innerHtml = document.querySelect("template").innerHtml
+    -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
